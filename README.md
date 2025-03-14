@@ -1,1 +1,1 @@
-# Gym-system
+# Gym-system academia
