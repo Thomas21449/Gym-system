@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Aluno</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Cadastrar Aluno</h1>
+    <form method="POST">
+        <label>Nome: <input type="text" name="name" required></label>
+        <label>E-mail: <input type="email" name="email" required></label>
+        <label>Plano:
+            <select name="plan" required>
+                <option value="Mensal">Mensal</option>
+                <option value="Semestral">Semestral</option>
+                <option value="Anual">Anual</option>
+            </select>
+        </label>
+        <label>Frequência:
+            <select name="access_frequency" required>
+                <option value="2x por semana">2x/semana</option>
+                <option value="3x por semana">3x/semana</option>
+                <option value="Diário">Diário</option>
+            </select>
+        </label>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
